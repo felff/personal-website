@@ -1,0 +1,15 @@
+.container {
+    background: radial-gradient(circle at center, rgb(5, 1, 58), rgb(0, 0, 0));
+    height: 100%;
+}
+
+.checkBox {
+    position: absolute;
+    right: 3%;
+    z-index: 999;
+    font-size: larger;
+    top: 3%;
+    color: rgb(253, 253, 253);
+    display: flex;
+    align-items: center;
+}

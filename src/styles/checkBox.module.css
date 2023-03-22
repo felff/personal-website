@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: 35px;
+    height: 17px;
+    background-color: #d8d8d8;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.container input {
+    appearance: none;
+}
+
+.container span::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(113, 209, 253);
+    border-radius: 10px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.container input:checked ~ span::before {
+    right: 1px;
+}

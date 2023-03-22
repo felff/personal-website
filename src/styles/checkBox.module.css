@@ -1,29 +1,39 @@
 .container {
     position: relative;
-    width: 35px;
-    height: 17px;
-    background-color: #d8d8d8;
+    width: 40px;
+    height: 22px;
+    background-color: #ffffff;
     border-radius: 15px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(102, 102, 102) 1px solid;
+    box-shadow: 1px 2px 4px rgb(37, 37, 37);
+    margin: 0 3px;
 }
 
 .container input {
-    appearance: none;
+    z-index: 999;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: 0;
 }
 
-.container span::before {
-    content: '';
+.container span {
     position: absolute;
-    top: 2px;
     left: 1px;
-    width: 12px;
-    height: 12px;
-    background-color: rgb(113, 209, 253);
-    border-radius: 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: rgb(113, 209, 253);
     transition: 0.5s;
 }
 
-.container input:checked ~ span::before {
-    right: 1px;
+
+.container input:checked ~ span {
+    left: 19px;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.6);
 }

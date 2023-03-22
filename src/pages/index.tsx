@@ -21,6 +21,7 @@ const index: NextPage = () => {
         return <Home setCurrentPage={setCurrentPage} />;
     }
   }
+
   useEffect(() => {
     if (!checked) {
       i18n.changeLanguage("en");

@@ -13,3 +13,20 @@
     display: flex;
     align-items: center;
 }
+
+.navigation {
+    position: fixed;
+    right: 3%;
+    z-index: 999;
+    top: 25%;
+}
+
+@media (max-width:1140px) {
+    .navigation {
+        position: fixed;
+        width: 100%;
+        top: auto;
+        left: 0;
+        bottom: 0;
+    }
+}

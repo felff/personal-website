@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Home from './home'
 import Style from '../styles/index.module.css'
 import CheckBox from '../components/checkBox'
+import Navigation from '../components/navigation'
 import Image from 'next/image'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
@@ -12,7 +13,7 @@ import { useTranslation } from 'react-i18next'
 const index: NextPage = () => {
   const { i18n } = useTranslation();
   const [currentPage, setCurrentPage] = useState("HOME");
-  const [checked, setChacked] = useState(false);
+  const [ischecked, setChacked] = useState(false);
   const changCurrentPage = () => {
     switch (currentPage) {
       case "HOME":
@@ -23,12 +24,12 @@ const index: NextPage = () => {
   }
 
   useEffect(() => {
-    if (!checked) {
+    if (!ischecked) {
       i18n.changeLanguage("en");
     } else {
       i18n.changeLanguage("zh");
     }
-  }, [checked])
+  }, [ischecked])
   return (
     <>
       <Head>
@@ -40,24 +41,27 @@ const index: NextPage = () => {
         <div className={Style.checkBox}>
           <span
             style={
-              !checked ? {
+              !ischecked ? {
                 textShadow: "rgb(142, 152, 235) 0.1em 0.1em 0.2em",
                 fontWeight: "bolder",
                 color: "rgb(113, 209, 253)"
               } : {}
             }>EN</span>
           <CheckBox
-            checked={checked}
-            onClick={() => { setChacked(!checked) }}
+            ischecked={ischecked}
+            onClick={() => { setChacked(!ischecked) }}
           />
           <span
             style={
-              checked ? {
+              ischecked ? {
                 textShadow: "rgb(142, 152, 235) 0.1em 0.1em 0.2em",
                 fontWeight: "bolder",
                 color: "rgb(113, 209, 253)"
               } : {}
             }>中文</span>
+        </div>
+        <div className={Style.navigation}>
+            <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 .container {
     background: radial-gradient(circle at center, rgb(5, 1, 58), rgb(0, 0, 0));
-    height: 100%;
+    min-height: 100%;
 }
 
 .checkBox {

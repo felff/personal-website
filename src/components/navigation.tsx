@@ -10,7 +10,7 @@ interface navigationProp {
     currentPage: string;
     setCurrentPage: React.Dispatch<React.SetStateAction<string>>
 }
-const navigation = ({ currentPage, setCurrentPage }: navigationProp) => {
+const Navigation = ({ currentPage, setCurrentPage }: navigationProp) => {
     const { t } = useTranslation();
     return (
         <div className={Style.container}>
@@ -77,4 +77,4 @@ const navigation = ({ currentPage, setCurrentPage }: navigationProp) => {
     )
 }
 
-export default navigation
+export default Navigation

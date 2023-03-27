@@ -7,7 +7,7 @@ import Gallery3D from '../components/gallery3D';
 import Image from "next/image";
 import office from "../imgs/office_desk.png"
 import school from "../imgs/school.png"
-const about = () => {
+const About = () => {
     const { t } = useTranslation();
     const saveFile = () => {
         saveAs(
@@ -130,4 +130,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About

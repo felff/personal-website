@@ -14,7 +14,7 @@ const gallery3D = () => {
     <div className={Style.cotainer}>
       {
         img_cotainer.map((todo,i)=>{
-          return <span style={{transform:`rotateY(${i*45}deg) translateZ(300px)`}}><img src={todo.src}/></span>
+          return <span key={1} style={{transform:`rotateY(${i*45}deg) translateZ(300px)`}}><img src={todo.src}/></span>
         })
       }
     </div>

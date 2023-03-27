@@ -9,16 +9,14 @@ import Personal6 from '../imgs/personal6.jpg'
 import Personal7 from '../imgs/personal7.jpg'
 import Personal8 from '../imgs/personal8.jpg'
 const gallery3D = () => {
+  const img_cotainer  = [Personal1,Personal2,Personal3,Personal4,Personal5,Personal6,Personal7,Personal8]
   return (
     <div className={Style.cotainer}>
-        <span style={{transform:`rotateY(${1*45}deg) translateZ(300px)`}}><img src={Personal1.src}/></span>
-        <span style={{transform:`rotateY(${2*45}deg) translateZ(300px)`}}><img src={Personal2.src}/></span>
-        <span style={{transform:`rotateY(${3*45}deg) translateZ(300px)`}}><img src={Personal3.src}/></span>
-        <span style={{transform:`rotateY(${4*45}deg) translateZ(300px)`}}><img src={Personal4.src}/></span>
-        <span style={{transform:`rotateY(${5*45}deg) translateZ(300px)`}}><img src={Personal5.src}/></span>
-        <span style={{transform:`rotateY(${6*45}deg) translateZ(300px)`}}><img src={Personal6.src}/></span>
-        <span style={{transform:`rotateY(${7*45}deg) translateZ(300px)`}}><img src={Personal7.src}/></span>
-        <span style={{transform:`rotateY(${8*45}deg) translateZ(300px)`}}><img src={Personal8.src}/></span>
+      {
+        img_cotainer.map((todo,i)=>{
+          return <span style={{transform:`rotateY(${i*45}deg) translateZ(300px)`}}><img src={todo.src}/></span>
+        })
+      }
     </div>
   )
 }

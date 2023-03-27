@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../styles/ome.module.css'
+import Style from '../styles/home.module.css'
 import SELFIE from '../imgs/selfie.jpg'
 import { useTranslation } from "react-i18next";
 import MoreButton from "../components/moreButton"

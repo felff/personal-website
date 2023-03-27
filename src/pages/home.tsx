@@ -6,7 +6,7 @@ import MoreButton from "../components/moreButton"
 interface homeProp {
     setCurrentPage: React.Dispatch<React.SetStateAction<string>>
 }
-const home = ({ setCurrentPage }: homeProp) => {
+const Home = ({ setCurrentPage }: homeProp) => {
     const { t } = useTranslation();
     let title = t("home_title").split('')
     return (
@@ -43,4 +43,4 @@ const home = ({ setCurrentPage }: homeProp) => {
     )
 }
 
-export default home
+export default Home

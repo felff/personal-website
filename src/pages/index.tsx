@@ -6,12 +6,11 @@ import About from './about'
 import Style from '../styles/index.module.css'
 import CheckBox from '../components/checkBox'
 import Navigation from '../components/navigation'
-import Image from 'next/image'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
 
 
-const index: NextPage = () => {
+const Index: NextPage = () => {
   const { i18n } = useTranslation();
   const [currentPage, setCurrentPage] = useState("ABOUT");
   const [ischecked, setChacked] = useState(false);
@@ -73,4 +72,4 @@ const index: NextPage = () => {
     </>
   )
 }
-export default index;
+export default Index;

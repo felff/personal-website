@@ -1,7 +1,4 @@
 .bg {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     min-height: 100vh;
 }
@@ -20,7 +17,7 @@
 }
 
 .color:nth-child(2) {
-    bottom: -30px;
+    bottom: 0px;
     right: 20px;
     width: 800px;
     height: 800px;
@@ -52,9 +49,138 @@
     border-radius: 10px;
 }
 
+.about h1 {
+    font-size: 105px;
+    text-align: center;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.about h1 span {
+    transition: 1.5s;
+}
+
+.about h1:hover span {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+}
+
+.about h1 span {
+    transition: 1.2s;
+}
+
+.about h1 span:nth-child(13n+1) {
+    transition-delay: 0.05s;
+}
+
+.about h1 span:nth-child(13n+2) {
+    transition-delay: 0.1s;
+}
+
+.about h1 span:nth-child(13n+3) {
+    transition-delay: 0.15s;
+}
+
+.about h1 span:nth-child(13n+4) {
+    transition-delay: 0.2s;
+}
+
+.about h1 span:nth-child(13n+5) {
+    transition-delay: 0.25s;
+}
+
+.about h1 span:nth-child(13n+6) {
+    transition-delay: 0.3s;
+}
+
+.about h1 span:nth-child(13n+7) {
+    transition-delay: 0.35s;
+}
+
+.about h1 span:nth-child(13n+8) {
+    transition-delay: 0.4s;
+}
+
+.about h1 span:nth-child(13n+9) {
+    transition-delay: 0.45s;
+}
+
+.about h1 span:nth-child(13n+10) {
+    transition-delay: 0.5s;
+}
+
+.about h1 span:nth-child(13n+11) {
+    transition-delay: 0.55s;
+}
+
+.about h1 span:nth-child(13n+12) {
+    transition-delay: 0.6s;
+}
+
+.about h1 span:nth-child(13n+13) {
+    transition-delay: 0.65s;
+}
+
+.about h2 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.about p {
+    font-size: 25px;
+    color: rgba(221, 221, 221, 0.664);
+    text-shadow: rgba(0, 0, 0, 0.705) 0.1em 0.1em 0.2em;
+    margin-top: 10px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 100px;
+}
+
 @media (min-width:1140px) {
+    .bg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .container {
         position: relative;
         width: 600px;
+        padding-left: 10px;
     }
+
+    .about {
+        position: relative;
+        width: 950px;
+        padding: 0 90px;
+    }
+
+}
+
+@media (max-width:1140px) {
+    .bg{
+        display: block;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .selfie{
+        width: 50%;
+    }
+
+    .about {
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 60px;
+    }
+
 }

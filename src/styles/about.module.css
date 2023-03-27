@@ -1,0 +1,240 @@
+.cotainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+.title {
+    padding: 25px 0;
+    width: 100%;
+    color: rgb(68, 86, 253);
+    display: grid;
+    place-content: center;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title>div {
+    grid-area: 1/1/-1/-1;
+}
+
+.top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, white 65%);
+    background: linear-gradient(177deg, black 53%, white 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+}
+
+.flex_box {
+    display: flex;
+}
+
+.box {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.content {
+    background-color: rgba(8, 0, 20, 0.253);
+    box-shadow: 0 20px 45px rgb(3, 26, 77);
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid rgba(75, 75, 75, 0.562);
+    padding: 20px 10px;
+}
+
+.content h2 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.personal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.personal ul li {
+    padding-top: 10px;
+    font-size: larger;
+    color: rgb(161, 167, 247);
+    font-weight: bolder;
+    list-style: none;
+}
+
+.personal ul li span {
+    color: white;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.skill {
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+}
+
+.skill h2 {
+    font-size: 40px;
+    text-shadow: rgb(121, 121, 121) 0.1em 0.1em 0.2em;
+    text-align: center;
+    z-index: 2;
+}
+
+.skill>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.skill>ul>li {
+    width: 30%;
+    margin: 20px;
+    list-style: none;
+}
+
+.skill_title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(161, 167, 247);
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(216, 215, 215);
+}
+
+.skill li ul {
+    padding: 10px;
+}
+
+.skill li ul li {
+    padding: 3px;
+    font-weight: bolder;
+    color: rgb(197, 197, 197);
+}
+
+.experience {
+    width: 100%;
+    color: white;
+}
+
+.experience h2 {
+    font-size: 38px;
+    text-shadow: rgb(121, 121, 121) 0.1em 0.1em 0.2em;
+    text-align: center;
+    z-index: 2;
+}
+
+.experience ul {
+    display: flex;
+    justify-content: center;
+}
+
+.experience ul li {
+    list-style: none;
+    width: 45%;
+    margin: 20px;
+    position: relative;
+}
+
+.experience ul li::before {
+    position: absolute;
+    content: '';
+    top: 55px;
+    left: 20px;
+    width: 2px;
+    height: 80%;
+    background-color: rgb(161, 167, 247);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon span {
+    margin-left: 20px;
+    font-weight: bolder;
+    position: relative;
+    background-color: rgb(180, 180, 180);
+    padding: 6px 13px;
+    border-radius: 2px;
+    text-shadow: rgb(94, 94, 94) 0.1em 0.1em 0.2em;
+}
+
+.icon span::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: -11px;
+    background-color: rgb(180, 180, 180);
+    transform: rotate(45deg);
+}
+
+.experience_content {
+    margin-left: 50px;
+}
+
+.experience_content h1 {
+    padding-top: 10px;
+    color: rgb(161, 167, 247);
+}
+
+.experience_content h3 {
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+.experience_content p {
+    color: rgb(182, 182, 182);
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+@media (max-width:1140px) {
+    .flex_box {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .skill>ul>li {
+        width: 50%;
+    }
+
+    .experience ul {
+        display: block;
+        padding: 20px 0 80px 0;
+    }
+    .experience ul li{
+        width: 100%;
+        padding: 20px 0;
+    }
+}

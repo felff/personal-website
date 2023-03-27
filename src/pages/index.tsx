@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Home from './home'
+import About from './about'
 import Style from '../styles/index.module.css'
 import CheckBox from '../components/checkBox'
 import Navigation from '../components/navigation'
@@ -12,12 +13,14 @@ import { useTranslation } from 'react-i18next'
 
 const index: NextPage = () => {
   const { i18n } = useTranslation();
-  const [currentPage, setCurrentPage] = useState("HOME");
+  const [currentPage, setCurrentPage] = useState("ABOUT");
   const [ischecked, setChacked] = useState(false);
   const changCurrentPage = () => {
     switch (currentPage) {
       case "HOME":
         return <Home setCurrentPage={setCurrentPage} />;
+      case "ABOUT":
+        return <About />;
       default:
         return <Home setCurrentPage={setCurrentPage} />;
     }
@@ -35,6 +38,9 @@ const index: NextPage = () => {
       <Head>
         <title>personal-website</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet" />
       </Head>
       <div className={Style.container}>
         {changCurrentPage()}
@@ -61,7 +67,7 @@ const index: NextPage = () => {
             }>中文</span>
         </div>
         <div className={Style.navigation}>
-            <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
+          <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </div>
       </div>
     </>

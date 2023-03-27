@@ -1,11 +1,14 @@
 import React from 'react'
 import Style from '../styles/home.module.css'
 import SELFIE from '../imgs/selfie.jpg'
-
+import { useTranslation } from "react-i18next";
+import MoreButton from "../components/moreButton"
 interface homeProp {
     setCurrentPage: React.Dispatch<React.SetStateAction<string>>
 }
 const home = ({ setCurrentPage }: homeProp) => {
+    const { t } = useTranslation();
+    let title = t("home_title").split('')
     return (
         <div className={Style.bg}>
             <div className={Style.color}></div>
@@ -23,31 +26,18 @@ const home = ({ setCurrentPage }: homeProp) => {
                 </div>
             </div>
             <div className={Style.about}>
-                <h1 className={Style.name}>
-                    <span>F</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>-</span>
-                    <span>E</span>
-                    <span>n</span>
-                    <span>d</span>
-                    <span> </span>
-                    <span>W</span>
-                    <span>e</span>
-                    <span>b</span>
-                    <span> </span>
-                    <span>D</span>
-                    <span>e</span>
-                    <span>v</span>
-                    <span>e</span>
-                    <span>l</span>
-                    <span>o</span>
-                    <span>p</span>
-                    <span>e</span>
-                    <span>r</span>
+                <h1>
+                    {
+                        title.map((char, i) => {
+                            return <span key={i}>{char}</span>
+                        })
+                    }
                 </h1>
+                <h2>{t("home_name")}</h2>
+                <p>{t("home_content")}</p>
+                <div className={Style.btn}>
+                    <MoreButton text={t("more_btn_text")} onClick ={()=>setCurrentPage("ABOUT")} />
+                </div>
             </div>
         </div>
     )

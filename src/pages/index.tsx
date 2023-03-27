@@ -10,7 +10,7 @@ import '../i18n'
 import { useTranslation } from 'react-i18next'
 
 
-const Index: NextPage = () => {
+const index: NextPage = () => {
   const { i18n } = useTranslation();
   const [currentPage, setCurrentPage] = useState("ABOUT");
   const [ischecked, setChacked] = useState(false);
@@ -72,4 +72,4 @@ const Index: NextPage = () => {
     </>
   )
 }
-export default Index;
+export default index;

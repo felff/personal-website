@@ -15,9 +15,8 @@ const Portflio = () => {
             <div className={Style.card}>
                 {
                     project.map(el => {
-                        return <div>
+                        return <div key={el.id}>
                             <PortflioCard
-                                key={el.id}
                                 id={el.id}
                                 img={el.img}
                                 title={el.title}

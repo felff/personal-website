@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import Home from './home'
 import About from './about'
+import Portflio from './portflio'
 import Style from '../styles/index.module.css'
 import CheckBox from '../components/checkBox'
 import Navigation from '../components/navigation'
@@ -12,7 +13,7 @@ import { useTranslation } from 'react-i18next'
 
 const Index: NextPage = () => {
   const { i18n } = useTranslation();
-  const [currentPage, setCurrentPage] = useState("ABOUT");
+  const [currentPage, setCurrentPage] = useState("HOME");
   const [ischecked, setChacked] = useState(false);
   const changCurrentPage = () => {
     switch (currentPage) {
@@ -20,6 +21,8 @@ const Index: NextPage = () => {
         return <Home setCurrentPage={setCurrentPage} />;
       case "ABOUT":
         return <About />;
+      case "PORTFOLIO":
+        return <Portflio/>
       default:
         return <Home setCurrentPage={setCurrentPage} />;
     }

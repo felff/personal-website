@@ -102,13 +102,15 @@
     }
 
     .content h4 {
-        font-size: 5px;
+        font-size: 15px;
     }
 
     .content p {
-        font-size: 5px;
+        font-size: 15px;
     }
-
+    .footer a{
+        font-size: smaller;
+    }
     .footer a:nth-child(1) {
         position: absolute;
         bottom: -60px;

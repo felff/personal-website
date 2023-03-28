@@ -36,12 +36,12 @@ function PortflioCard({
         <div className={Style.footer}>
           {
             SOURCE && (
-              <a href={SOURCE} target="_blank">SOURCE CODE</a>
+              <a href={SOURCE} target="_blank" rel="noreferrer">SOURCE CODE</a>
             )
           }
           {
             vist && (
-              <a href={vist} target="_blank">VIST</a>
+              <a href={vist} target="_blank" rel="noreferrer">VIST</a>
             )
           }
         </div>

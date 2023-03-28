@@ -31,7 +31,7 @@
     transition: 0.5s;
 }
 
-.card:hover .content{
+.card:hover .content {
     transform: translateY(0px);
     opacity: 1;
 }
@@ -83,4 +83,41 @@
     position: absolute;
     bottom: -60px;
     right: 120px;
+}
+
+@media (max-width:1140px) {
+    .card {
+        width: 400px;
+        height: 500px;
+        margin: 20px 0;
+    }
+
+    .content {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .content h2 {
+        font-size: 1.7em;
+    }
+
+    .content h4 {
+        font-size: 5px;
+    }
+
+    .content p {
+        font-size: 5px;
+    }
+
+    .footer a:nth-child(1) {
+        position: absolute;
+        bottom: -60px;
+        left: 50px;
+    }
+
+    .footer a:nth-child(2) {
+        position: absolute;
+        bottom: -60px;
+        right: 30px;
+    }
 }

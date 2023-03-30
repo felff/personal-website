@@ -35,7 +35,7 @@ const project = [
         img: PER.src,
         title: "Personal Website",
         text: "個人靜態網站，純css動畫特效與個人資料作品集",
-        technology: "React.js | Next.js | 18n | TypeScript | CSS | HTML | RWD",
+        technology: "React.js | Next.js | 1i8n | TypeScript | CSS | HTML | RWD",
         SOURCE: "https://github.com/felff/personal-website",
         vist: "https://personal-website-one-sooty.vercel.app/"
     },

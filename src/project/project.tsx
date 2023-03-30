@@ -7,7 +7,7 @@ const project = [
         id: "01",
         img: ESG.src,
         title: "ESG Management System",
-        text: "以ESG為出發點開發的系統，可協助彙整所有排放源數據、係數等，建立統一標準化的資料庫，我負責前端所有介面開發交互及渲染，與串接api，建立可重用、調整的共用compoent! userName : a909henhen@gmail.com  password : !Aa12345",
+        text: "以ESG為出發點開發的系統，可協助彙整所有排放源數據、係數等，建立統一標準化的資料庫，我負責前端所有介面開發交互及渲染，與串接api，建立可重用、調整的共用compoent! u : a909henhen@gmail.com  p : !Aa12345",
         technology: "React.js | react-router-dom | react-paginate | Chart.js | Font Awesome | RWD | Antd | Typescript | Redux toolkit+Redux Saga",
         SOURCE: "",
         vist: "https://app.dif.com.tw/login"

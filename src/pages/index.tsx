@@ -9,6 +9,7 @@ import CheckBox from '../components/checkBox'
 import Navigation from '../components/navigation'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
+// import Demo from './demo'
 
 
 const Index: NextPage = () => {
@@ -23,6 +24,8 @@ const Index: NextPage = () => {
         return <About />;
       case "PORTFOLIO":
         return <Portflio/>
+      // case "DEMO":
+      //   return <Demo/>
       default:
         return <Home setCurrentPage={setCurrentPage} />;
     }

@@ -27,7 +27,7 @@ const project = [
     id: "03",
     img: CMSFXG.src,
     title: "CMS(FXG)",
-    text: "我在FXG主要負責的專案CMS公司內部管理系統，剛開始先幫忙把REACT升級版16=>18，再來負責開發新功能、和後團討論架構設、分配新功能的工作項、分配工作、共同開發、和最後的code reivew",
+    text: "我在FXG主要負責的專案CMS公司內部管理系統，剛開始先幫忙把REACT升級版16=>18，再來負責開發新功能、和後團討論架構設計、分配新功能的工作項、分配工作、共同開發、和最後的code reivew",
     technology:
       "React.js | Antd | MUI | 1i8n | TypeScript | Prettier | Day.js | SSE | websocket",
     SOURCE: "",

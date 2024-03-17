@@ -1,6 +1,5 @@
 import React from 'react'
 import Style from '../styles/portflioCard.module.css'
-import ESG from '../imgs/ESG_ManagementSystem.png'
 
 interface PortflioCardPop {
   id: string;

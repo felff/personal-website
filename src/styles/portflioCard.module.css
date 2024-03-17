@@ -26,15 +26,15 @@
 .content {
     padding: 20px;
     text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
+    transform: translateY(0px);
+    opacity: 1;
     transition: 0.5s;
 }
 
-.card:hover .content {
+/* .card:hover .content {
     transform: translateY(0px);
     opacity: 1;
-}
+} */
 
 .content h1 {
     position: absolute;

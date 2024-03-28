@@ -17,7 +17,7 @@ const project = [
     id: "02",
     img: Bravelog.src,
     title: "Bravelog(FXG)",
-    text: "設計並實現通用性高、可設定化的UI元件庫，包括按鈕、表單、卡片、導航等常用元件，将页面切割后的设计稿转化为可重用的React组件",
+    text: "設計並實現通用性高、可設定化的UI元件庫，包括按鈕、表單、卡片、導航等常用元件，將頁面切割後的設計稿轉換為可重複使用的React元件",
     technology:
       "React.js | Next.js | Antd | MUI | 1i8n | TypeScript | CSS | HTML | RWD",
     SOURCE: "",

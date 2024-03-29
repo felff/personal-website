@@ -37,24 +37,7 @@ const Home = ({ setCurrentPage }: homeProp) => {
           <MoreButton
             text={t("more_btn_text")}
             onClick={() => {
-              if (
-                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-                  navigator.userAgent
-                )
-              ) {
-                // 使用 URI Scheme "weixin://" 來打開手機上的微信應用程序
-                var weChatAppUrl = "weixin://";
-
-                // 創建一個隱藏的 a 標籤，設置 href 為微信 URI Scheme
-                var link = document.createElement("a");
-                link.setAttribute("href", weChatAppUrl);
-
-                // 觸發點擊事件來打開微信應用程序
-                link.dispatchEvent(new MouseEvent("click"));
-              } else {
-                alert("請使用手機訪問此網站以打開微信應用程序。");
-              }
-              //   setCurrentPage("ABOUT");
+                setCurrentPage("ABOUT");
             }}
           />
         </div>
